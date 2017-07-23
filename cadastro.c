@@ -5,7 +5,7 @@
 typedef struct aluno
 {
     int id;
-    char nome[30];
+    char nome[50];
     int turma;
     float provas[4];
     float freq;
