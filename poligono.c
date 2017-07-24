@@ -70,13 +70,11 @@ Ponto centroG(Poligono p)
     for(i = 0; i < p.n; i++)
     {
         xcg += p.v[i].x;
-        printf("xcg[%d]: %.2f\n", i, xcg);
     }
     xcg /= p.n;
 
     for(i = 0; i < p.n; i++) {
         ycg += p.v[i].y;
-        printf("ycg[%d]: %.2f\n", i, ycg);
     }
     ycg /= p.n;
 
@@ -95,5 +93,5 @@ float area(Poligono p)
     {
         area += ((p.v[i+1].x - p.v[i].x) * (p.v[i+1].y + p.v[i].y))/2;
     }
-    return area;
+    return abs(area);
 }
